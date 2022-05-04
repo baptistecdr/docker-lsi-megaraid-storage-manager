@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  lsi-megaraid-storage-manager:
+    container_name: lsi-megaraid-storage-manager
+    image: baptistecdr/lsi-megaraid-docker
+    privileged: true
+    environment:
+      - TZ=Europe/Paris
+      - ROOT_PASSWORD=myrootpassword
+      - DISPLAY=$DISPLAY
+    volumes:
+      - $HOME/.Xauthority:/root/.Xauthority
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    network_mode: host
