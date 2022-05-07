@@ -23,7 +23,7 @@ docker run --rm --privileged \
 * The UI should appear, click on Discover and double-click on your host
 * Credentials are
   * username: root
-  * password: $ROOT_PASSWORD`
+  * password: `$ROOT_PASSWORD`
 
 ### Docker Compose
 
@@ -36,7 +36,7 @@ wget https://raw.githubusercontent.com/baptistecdr/lsi-megaraid-docker/main/dock
 * The UI should appear, click on Discover and double-click on your host
 * Credentials are
   * username: root
-  * password: $ROOT_PASSWORD`
+  * password: `$ROOT_PASSWORD`
 
 ## Bugs and feature requests
 
