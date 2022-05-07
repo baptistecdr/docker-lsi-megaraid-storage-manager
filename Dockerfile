@@ -1,13 +1,14 @@
-FROM centos:7
+FROM rockylinux:8.5
 
-ENV ROOT_PASSWORD password
+ENV JRE_HOME /usr/lib/jvm/adoptopenjdk-8-hotspot-jre
+ENV removesnmp "1"
+ENV ROOT_PASSWORD "password"
+
 WORKDIR /
 COPY root /
 
-RUN rpmkeys --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 RUN yum -y update && yum clean all
-RUN yum -y install firefox adoptopenjdk-8-hotspot-jre unzip net-snmp net-snmp-utils
-ENV JRE_HOME /usr/lib/jvm/adoptopenjdk-8-hotspot-jre
+RUN yum -y install passwd firefox adoptopenjdk-8-hotspot-jre unzip
 
 RUN mkdir "MSM_linux_x64_installer"
 RUN tar -C /MSM_linux_x64_installer -xzvf MSM_linux_x64_installer-17.05.06-00.tar.gz && \
