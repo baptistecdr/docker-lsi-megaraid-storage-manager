@@ -7,6 +7,14 @@
     <a href="https://github.com/baptistecdr/lsi-megaraid-docker/issues/new">Request feature</a>
 </p>
 
+<div align="center">
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/baptistecdr/lsi-megaraid-docker/ci)
+![Docker Pulls](https://img.shields.io/docker/pulls/baptistecdr/lsi-megaraid-docker)
+![GitHub](https://img.shields.io/github/license/baptistecdr/lsi-megaraid-docker)
+
+</div>
+
 ## Quick start
 
 ### Docker
