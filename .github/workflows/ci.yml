@@ -22,8 +22,8 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            baptistecdr/lsi-megaraid-docker
-            ghcr.io/baptistecdr/lsi-megaraid-docker
+            baptistecdr/lsi-megaraid-storage-manager
+            ghcr.io/baptistecdr/lsi-megaraid-storage-manager
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=branch
@@ -62,4 +62,4 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          repository: baptistecdr/lsi-megaraid-docker
+          repository: baptistecdr/lsi-megaraid-storage-manager

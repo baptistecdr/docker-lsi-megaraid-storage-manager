@@ -2,16 +2,16 @@
 <p align="center">
     A simple Dockerfile/docker-compose to run LSI MegaRAID Storage Manager (GUI) on system that doesn't support it.
     <br>
-    <a href="https://github.com/baptistecdr/lsi-megaraid-docker/issues/new">Report bug</a>
+    <a href="https://github.com/baptistecdr/docker-lsi-megaraid-storage-manager/issues/new">Report bug</a>
     ·
-    <a href="https://github.com/baptistecdr/lsi-megaraid-docker/issues/new">Request feature</a>
+    <a href="https://github.com/baptistecdr/docker-lsi-megaraid-storage-manager/issues/new">Request feature</a>
 </p>
 
 <div align="center">
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/baptistecdr/lsi-megaraid-docker/ci)
-![Docker Pulls](https://img.shields.io/docker/pulls/baptistecdr/lsi-megaraid-docker)
-![GitHub](https://img.shields.io/github/license/baptistecdr/lsi-megaraid-docker)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/baptistecdr/docker-lsi-megaraid-storage-manager/ci)
+![Docker Pulls](https://img.shields.io/docker/pulls/baptistecdr/lsi-megaraid-storage-manager)
+![GitHub](https://img.shields.io/github/license/baptistecdr/docker-lsi-megaraid-storage-manager)
 
 </div>
 
@@ -26,7 +26,7 @@ docker run --rm --privileged \
 -e TZ="Europe/Paris" \
 -e ROOT_PASSWORD="myrootpassword" \
 -e DISPLAY=$DISPLAY \
---network host baptistecdr/lsi-megaraid-docker
+--network host baptistecdr/lsi-megaraid-storage-manager
 ```
 * The UI should appear, click on Discover and double-click on your host
 * Credentials are
@@ -37,7 +37,7 @@ docker run --rm --privileged \
 
 * Download docker-compose file
 ```shell
-wget https://raw.githubusercontent.com/baptistecdr/lsi-megaraid-docker/main/docker-compose.yml
+wget https://raw.githubusercontent.com/baptistecdr/docker-lsi-megaraid-storage-manager/main/docker-compose.yml
 ```
 * Change the timezone and the root password in `docker-compose.yml`
 * Run `docker-compose up`
@@ -49,7 +49,7 @@ wget https://raw.githubusercontent.com/baptistecdr/lsi-megaraid-docker/main/dock
 ## Bugs and feature requests
 
 Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not
-addressed yet, [please open a new issue](https://github.com/baptistecdr/lsi-megaraid-docker/issues).
+addressed yet, [please open a new issue](https://github.com/baptistecdr/docker-lsi-megaraid-storage-manager/issues).
 
 ## Contributing
 
