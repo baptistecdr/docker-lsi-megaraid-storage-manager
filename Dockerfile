@@ -1,6 +1,6 @@
 FROM eclipse-temurin:8u332-b09-jre@sha256:d6795e3c43f894332b3cee13dd8d5ddebe4bba382d41e454ba0451c1a80dc6c5 AS builder
 
-FROM rockylinux:8.6@sha256:e4dc1ae4eb263e3acd2009fee2d88d05b1174fed3dccd2a82eb4777cafbb41e1
+FROM rockylinux:8.6@sha256:afd392a691df0475390df77cb5486f226bc2b4cbaf87c41785115b9237f3203f
 
 ENV JAVA_HOME /opt/java/openjdk
 ENV JRE_HOME /opt/java/openjdk
