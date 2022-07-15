@@ -12,7 +12,7 @@ WORKDIR /
 COPY root /
 COPY --from=builder /opt/java/openjdk /opt/java/openjdk
 
-RUN yum -y update && yum install -y passwd firefox unzip && yum clean all
+RUN yum -y update && yum install -y passwd procps firefox unzip && yum clean all
 
 RUN mkdir "MSM_linux_x64_installer"
 RUN tar -C /MSM_linux_x64_installer -xzvf MSM_linux_x64_installer-17.05.06-00.tar.gz && \
