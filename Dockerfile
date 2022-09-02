@@ -1,4 +1,4 @@
-FROM eclipse-temurin:8u345-b01-jre@sha256:c5916c77fc7f643b8afe4fd8cc4e7a5ee102f1c6ba502b967edcce32b2abe618 AS builder
+FROM eclipse-temurin:8u345-b01-jre@sha256:23f7238855c9a7f5a7ff5ed181b907cd5fa310c8fe595853e6852b28717c4a2a AS builder
 
 FROM rockylinux:9.0@sha256:589b293b63aa244aba2fdd20614b11cbe9905f94f657d7c62e7fcad8bffbb37a
 
