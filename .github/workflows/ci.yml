@@ -58,7 +58,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
       - name: Update repo description
         if: startsWith(github.ref, 'refs/tags/v')
-        uses: peter-evans/dockerhub-description@da890086d39c735e41d8823c8a95bde4302c3d64 # tag=v3
+        uses: peter-evans/dockerhub-description@14881160433a81f9ebc838a253d4edd9e8fc35f1 # tag=v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
