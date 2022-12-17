@@ -9,7 +9,7 @@
 
 <div align="center">
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/baptistecdr/docker-lsi-megaraid-storage-manager/ci)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/baptistecdr/docker-lsi-megaraid-storage-manager/ci.yml?branch=main)
 ![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/baptistecdr/lsi-megaraid-storage-manager)
 ![Docker Pulls](https://img.shields.io/docker/pulls/baptistecdr/lsi-megaraid-storage-manager)
 ![GitHub](https://img.shields.io/github/license/baptistecdr/docker-lsi-megaraid-storage-manager)
