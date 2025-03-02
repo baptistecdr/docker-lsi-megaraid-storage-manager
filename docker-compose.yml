@@ -3,7 +3,7 @@ version: "3.9"
 services:
   lsi-megaraid-storage-manager:
     container_name: lsi-megaraid-storage-manager
-    image: baptistecdr/lsi-megaraid-storage-manager:4.1.6@sha256:cb836694f7d6451a1fb22a0ffcb34c877983e736e27512925f395c09c16fb18d
+    image: baptistecdr/lsi-megaraid-storage-manager:4.1.7@sha256:0d8d4cdd4de18fc7cdbcc51fef1ff0f0f2882539f049d307004cad07a7ab4325
     privileged: true
     environment:
       - TZ=Europe/Paris
